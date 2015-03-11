@@ -21,7 +21,7 @@ import com.chuck.shop.common.utils.StringUtils;
 public class XSSSecurityManager {
 
 	private static Logger logger = Logger.getLogger(XSSSecurityManager.class);
-	private static String configFile = "/WEB-INF/security/xss_security_config.xml";
+	private static String configFile = "classpath:/security/xss_security_config.xml";
 
 	/**
 	 * REGEX：校验正则表达式

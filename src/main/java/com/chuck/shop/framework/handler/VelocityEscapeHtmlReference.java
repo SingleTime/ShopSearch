@@ -20,7 +20,7 @@ public class VelocityEscapeHtmlReference extends EscapeHtmlReference {
             String result = value.toString();  
             
             //对某些特殊的字段不错HTML的escape操作，比如(搜索高亮、分页代码)
-            String regEx="seaxEscapeHtml=\"false\"";  
+            String regEx="shopEscapeHtml=\"false\"";  
             Pattern p=Pattern.compile(regEx); 
             Matcher m=p.matcher(result); 
             boolean rs=m.find(); 
@@ -30,7 +30,7 @@ public class VelocityEscapeHtmlReference extends EscapeHtmlReference {
                         .replaceAll("<", "&#60;").replaceAll("\"", "&#34;")
                         .replaceAll("\'", "&#39;"); 
             }else{
-            	result = result.replaceAll("seaxEscapeHtml=\"false\"", "");
+            	result = result.replaceAll("shopEscapeHtml=\"false\"", "");
             }
             
             //\r\n

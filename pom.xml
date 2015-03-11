@@ -207,7 +207,13 @@
 		<artifactId>velocity-tools-generic</artifactId>
 		<version>1.2</version>
 	</dependency>
-	<!-- velocity 依赖 end -->
+
+    <!-- velocity 依赖 end -->
+    <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>1.4</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>ShopSearch</finalName>
